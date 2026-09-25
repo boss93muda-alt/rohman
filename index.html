@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio — Nama Kamu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
+            background-size: 400% 400%;
+            animation: latarBergerak 15s ease infinite;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        @keyframes latarBergerak {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .kartu {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            padding: 50px 40px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transform: translateY(0);
+            transition: all 0.4s ease;
+        }
+
+        .kartu:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139, 92, 246, 0.5);
+            box-shadow: 0 12px 40px rgba(139, 92, 246, 0.2);
+        }
+
+        .profil {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+            animation: berkilau 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes berkilau {
+            from { box-shadow: 0 0 20px rgba(139, 92, 246, 0.4); }
+            to { box-shadow: 0 0 40px rgba(236, 72, 153, 0.5); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sub-judul {
+            font-size: 1.2em;
+            color: #fca5d5;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            margin: 30px 0 15px;
+            color: #c9fdb5;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(180deg, #8b5cf6, #ec4899);
+            border-radius: 2px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #ddd6fe;
+        }
+
+        .keahlian {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .keahlian span {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.2));
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            transition: 0.3s;
+        }
+
+        .keahlian span:hover {
+            transform: scale(1.05);
+            border-color: #ec4899;
+        }
+
+        .kontak {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .kontak a {
+            flex: 1;
+            min-width: 140px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .kontak a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+        }
+
+        .daftar li {
+            padding: 10px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+            list-style: none;
+        }
+
+        .daftar li::before {
+            content: '▸';
+            color: #ec4899;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Atas — Profil -->
+        <div class="kartu">
+            <div class="profil">
+                
+                   <img src="foto.png" alt="" width="120px" height="145px">
+                
+                  
+                <h1>ATIQURROHMAN</h1>
+                <p class="sub-judul">MAHASISWA & PEMBELAJAR TEKNOLOGI</p>
+            </div>
+
+            <h2>Tentang Saya</h2>
+            <p>Halo! 👋 Selamat datang di portofolio saya. Saya seorang pemula yang bersemangat mempelajari dunia pemrograman dan teknologi. Percaya bahwa kode bisa mengubah ide menjadi kenyataan. Selalu ingin belajar hal baru dan berkembang setiap hari.</p>
+
+            <h2>Keahlian</h2>
+            <div class="keahlian">
+                <span>🌐 HTML & CSS</span>
+                <span>📊 Google Apps Script</span>
+                <span>📑 Microsoft Office</span>
+                <span>✏️ Desain Dasar</span>
+            </div>
+
+            <h2>Pendidikan</h2>
+            <ul class="daftar">
+                <li>🎓 <strong>[2026] — Sekarang</strong><br>Universitas [Widya Gama malang] · prodi [Teknik Informatika]</li>
+                <li>🏫 <strong>[2022] — [2025]</strong><br>SMK [bustanul ulum ]</li>
+                <li>🏫 <strong>[2019] — [2021]</strong><br>MTs [bustanul ulum ]</li>
+                <li>🏫 <strong>[2012] — [2019]</strong><br>SDN [Batu bintang 1 ]</li>
+            </ul>
+
+            <h2>Proyek & Pengalaman</h2>
+            <ul class="daftar">
+                <li>📋 Formulir Data Otomatis ke Google Sheets</li>
+                <li>🌐 Halaman Web Portofolio Pribadi</li>
+            </ul>
+
+            <h2>Hubungi Saya</h2>
+            <div class="kontak">
+                <a href="mailto:boss93muda@gmail.com">📧 Email</a>
+              <a href="#">💬 WhatsApp</a>
+
+                <a href="github.html">
+                    <li>💻 GitHub</li>
+                </a>
+                <a href="#">📸 Instagram</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
